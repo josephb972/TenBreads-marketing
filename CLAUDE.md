@@ -82,3 +82,4 @@ Same mechanics worldwide: US contracted line matrices (Sysco, US Foods, PFG) and
 - Keep copy operator-facing and dollar-concrete (cents/lb, $/case, $/drop); avoid generic "AI" fluff.
 - Money handling: support $, £, €; never hard-code USD.
 - Never commit secrets (Stripe keys, Firebase service accounts, `.env`).
+- Standing owner preference: do everything possible autonomously. When the owner must choose, ask with a multiple-choice question (AskUserQuestion). When a task needs the owner and cannot be done by Claude, give a clear step-by-step guide.

@@ -5,15 +5,15 @@ Single source of truth for agent settings. Agents must read this first.
 | Setting | Value |
 |---|---|
 | Sending domain | `elevatia.dev` (interim; swap when a Tenbreads domain is ready) |
-| Sender name | TODO — set by owner |
-| Sender address | TODO — e.g. name@elevatia.dev |
-| Reply-to | TODO |
+| Sender name | Joseph at Tenbreads |
+| Sender address | joseph@elevatia.dev |
+| Reply-to | joseph@elevatia.dev |
 | Physical mailing address (required in every email footer) | TODO — set by owner |
 | Unsubscribe line | "Reply STOP and I won't email you again." |
 | Daily draft cap | 15 |
 | Auto-send | OFF (all email is a Gmail draft for owner approval) |
 | Public posting | OFF (drafts only) |
-| Regions | US, UK |
+| Regions | US and UK from day one (review UK drafts for £ and PECR) |
 | Currencies | $, £, € (match the prospect's region) |
 
 ## Hard rules for every agent
