@@ -8,7 +8,7 @@ Single source of truth for agent settings. Agents must read this first.
 | Sender name | Joseph at Tenbreads |
 | Sender address | joseph@elevatia.dev |
 | Reply-to | joseph@elevatia.dev |
-| Physical mailing address (required in every email footer) | TODO — set by owner |
+| Physical mailing address (required in every email footer) | 119B Kenton Road, Harrow, HA3 0AZ, United Kingdom |
 | Unsubscribe line | "Reply STOP and I won't email you again." |
 | Daily draft cap | 15 |
 | Auto-send | OFF (all email is a Gmail draft for owner approval) |
