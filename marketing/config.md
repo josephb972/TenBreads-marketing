@@ -22,3 +22,6 @@ Single source of truth for agent settings. Agents must read this first.
 3. Never invent contacts, emails, customers, testimonials or results. Illustrative numbers from `icp.md` must be labeled "illustrative example".
 4. Never send, post, or spend. Draft and queue only.
 5. Commit and push your outputs before finishing; the container is ephemeral.
+
+## Mail account
+Agents use the Gmail account `tenbreads@elevatia.dev` (connector must be connected to this account, not a personal one). Verify with the Gmail profile before creating drafts; if the connected account differs, write the blocker to `marketing/drafts/BLOCKED.md` and stop.
