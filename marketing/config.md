@@ -6,8 +6,8 @@ Single source of truth for agent settings. Agents must read this first.
 |---|---|
 | Sending domain | `elevatia.dev` (interim; swap when a Tenbreads domain is ready) |
 | Sender name | Joseph at Tenbreads |
-| Sender address | joseph@elevatia.dev |
-| Reply-to | joseph@elevatia.dev |
+| Sender address | tenbreads@elevatia.dev |
+| Reply-to | tenbreads@elevatia.dev |
 | Physical mailing address (required in every email footer) | 119B Kenton Road, Harrow, HA3 0AZ, United Kingdom |
 | Unsubscribe line | "Reply STOP and I won't email you again." |
 | Daily draft cap | 15 |
