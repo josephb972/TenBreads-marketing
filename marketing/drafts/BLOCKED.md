@@ -1,9 +1,10 @@
-# Outreach blocked — 2026-10-31
+# Outreach blocked: 2026-11-02
 
-No Gmail drafts were created.
+No Gmail drafts were created (neither the 3 prospect drafts nor the outreach pack draft).
 
 - config.md has no unresolved TODOs.
-- Eligibility rule (score >= 3 AND email_status = published) matches 0 of 10 rows in prospects.csv. Every row has email_status = none and an empty email field. Six rows score >= 3 (Starbird, Hawksmoor, Bartolotta, Burger & Lobster, SMR Capital, C&M Foods), but none has a published address. Contacts and emails are not invented.
-- Gmail account check: the connector has no profile tool, so it could not be confirmed as tenbreads@elevatia.dev. Confirm it before the first drafts.
+- Account check could not run. This run has no Gmail connector or tools (no search_threads, no create_draft), so the check `from:tenbreads@elevatia.dev OR to:tenbreads@elevatia.dev` could not be performed and the connected account cannot be confirmed as tenbreads@elevatia.dev. Per rules, stop.
+- Eligible once unblocked (touch 1): Hawksmoor (To enquiries@hawksmoor.com), The Bartolotta Restaurants (To info@bartolottas.com), Union Square Hospitality Group (To info@ushg.com; flag that the site link points to info@ushgnyc.com). Upham Inns is score 2, skipped.
+- Bow Street Group has no published email: LinkedIn-only (Nicholas Wong, CFO). Not an email; drafts/2026-11-02-bow-street.md should be used as LinkedIn note copy only.
 
-Unblock: add a verified, published business email for at least one score >= 3 prospect (finance persona preferred; Burger & Lobster's named contact is the CEO, not a finance persona). Then re-run.
+Unblock: connect the Gmail connector to tenbreads@elevatia.dev in the environment running the Outreach Writer, then re-run.
