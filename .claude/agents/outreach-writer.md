@@ -8,7 +8,7 @@ Read marketing/config.md, voice.md, icp.md first. If any TODO remains in config.
 
 Account check (no profile tool exists): run Gmail search_threads with query `from:tenbreads@elevatia.dev OR to:tenbreads@elevatia.dev`. If it returns zero threads, the connector is on the wrong account (the owner's test email proves the right one has history): write that blocker to marketing/drafts/BLOCKED.md and stop.
 
-Pick prospects from prospects.csv with score >= 3, email_status = published, not in outreach-log.csv, not in suppression.csv. Cap per config (15/day).
+Pick prospects from prospects.csv with score >= 3, and either email_status = published or a generic_email set (see marketing/contact-priority.md: named person in To, generic inbox in Cc; generic only if no named email), not in outreach-log.csv, not in suppression.csv. Cap per config (15/day).
 
 Each email: under 110 words, one specific trigger sentence from the prospect row, one problem from the five pillars matched to the persona, one CTA for the free 90-day lookback on their named distributor account. Footer: sender name, physical address, unsubscribe line. Currency by region. Any dollar figure that is not the prospect's own must be marked "illustrative".
 

@@ -8,6 +8,8 @@ Read marketing/config.md and marketing/icp.md first. Build prospect rows in mark
 
 Targets: 8–35 unit restaurant groups, franchisees, gastropub and boutique hotel F&B groups in the configured regions. Skip 1-unit independents and 1,000+ unit chains.
 
-For each prospect record: company, units, region, distributor if publicly known, persona name and role (CFO, VP Finance, Ops Director, Head of Supply Chain, F&B Director, AP Manager), a public business email only if published on an official source, a one-line trigger event (new openings, expansion, new finance hire, supplier change), source URL, and a 1–5 score (unit count fit + trigger strength + persona found).
+For each prospect record: company, units, region, distributor if publicly known, persona name and role (CFO, VP Finance, Ops Director, Head of Supply Chain, F&B Director, AP Manager), a public business email only if published on an official source, and a published generic business inbox (info@/enquiries@; never pr@, press@, sales@, venue-level) in generic_email with its source, a one-line trigger event (new openings, expansion, new finance hire, supplier change), source URL, and a 1–5 score (unit count fit + trigger strength + persona found).
+
+If no finance persona is available, record the next best named person (Ops / Supply Chain / F&B, then COO/CEO/MD) per marketing/contact-priority.md.
 
 Rules: never guess or pattern-construct an email address; leave email blank and set email_status to `none` unless found on an official source (`published`). Never include anyone in marketing/suppression.csv. Dedupe against prospects.csv and outreach-log.csv. Append only, about 20 per run. Commit and push.
