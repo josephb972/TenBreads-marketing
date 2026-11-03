@@ -7,9 +7,10 @@ Cold emails to restaurant groups are written **by Joseph, as a person**, not as 
 - Plain, conversational sentences. Read it aloud; if it sounds like a brochure, rewrite it.
 - **One real, specific reason** for writing to this group (number of locations, their distributor, a region). If we don't have one, leave it out rather than invent it.
 - **One ask**: the free 90-day lookback audit on one distributor account. Nothing else is offered in the first email (no pricing, no contingency %, no SaaS tiers).
-- Short: ~80-110 words, 3 short paragraphs max. Readable in 15 seconds.
+- Short: ~100-130 words, 3 short paragraphs max. Readable in 20 seconds.
+- **Include the 1.8% stat once, with a worked example.** The industry-average leakage is about 1.8% of invoice totals. State it as an industry average, then show the maths on an *illustrative* group (not the prospect): 12 locations at ~$90,000/week is about $1,620/week, or roughly $84,000 a year. Make clear it is an example, not a claim about their invoices.
 - Subject line: plain and lowercase-ish, like a colleague wrote it. No emoji, no caps, no "opportunity", no "unlock".
-- Never state numbers we can't back for *this* prospect. No ROI multiples, no "save up to X%", no "1.8% leakage" in the first email. Concrete examples of the *kind* of error (cents/lb drift, substituted SKU, drop fee) are fine.
+- Never state numbers we can't back for *this* prospect. Use the 1.8% industry average and the illustrative example only; no ROI multiples, no "you'll save X", no figures presented as theirs. Concrete examples of the *kind* of error (cents/lb drift, substituted SKU, drop fee) are fine.
 - Don't pretend to have looked at their invoices. We haven't.
 
 ## Banned phrases
@@ -33,7 +34,7 @@ Hi [First name],
 
 I'm Joseph. I run Tenbreads, a small company that checks restaurant groups' distributor invoices against the prices they've contracted. I'm writing to you because [specific reason, e.g. you're running 14 locations on a Sysco account].
 
-On accounts that size, things like a chicken price creeping from $3.80 to $3.94 a pound, a substituted item billed at spot price, or a drop fee that shouldn't be there tend to get through, because nobody has the hours to check every line.
+Across the industry, about 1.8% of distributor invoice totals turns out to be overcharges: chicken creeping from $3.80 to $3.94 a pound, a substituted item billed at spot price, a drop fee that shouldn't be there. To give you a sense of scale, a 12-location group spending around $90,000 a week would be losing roughly $1,600 a week, or about $84,000 a year. That's an example, not a number from your invoices.
 
 I'd like to run a free audit of the last 90 days of invoices from one distributor and send you what I find, with the dollar amounts. If there's nothing to recover, you've lost nothing. Would that be useful?
 
@@ -47,7 +48,7 @@ Hi [First name],
 
 I'm Joseph. I run Tenbreads, a small company that checks restaurant groups' supplier invoices against their agreed prices. I'm getting in touch because [specific reason, e.g. you're running 12 sites on a Bidfood account].
 
-On accounts that size, small things tend to slip through: a price file change that never got passed on, an item substituted at a higher price, a credit note from the driver that never shows up on the statement. Few teams have time to check every line.
+Across the industry, about 1.8% of supplier invoice totals turns out to be overcharges: a price file change that never got passed on, an item substituted at a higher price, a driver's credit note that never reaches the statement. To give you a sense of scale, a 12-site group spending around £90,000 a week would be losing roughly £1,600 a week, or about £84,000 a year. That's an example, not a number from your invoices.
 
 I'd like to run a free audit of the last 90 days of invoices from one supplier and send you what I find, in pounds. If there's nothing to recover, you've lost nothing. Would that be useful?
 
@@ -67,9 +68,10 @@ Rules:
 - Introduce yourself as Joseph in the first line ("I'm Joseph, I run Tenbreads").
 - Tenbreads checks distributor invoices against the prices the group has contracted and gets credits back for overcharges.
 - Give one specific, true reason for contacting this group, using only facts provided. If none are provided, omit it. Never invent details.
-- The only offer is a free audit of the last 90 days of invoices from one distributor, with the dollar/pound amounts found. No pricing, fees, percentages, or ROI claims.
-- Mention at most one or two concrete examples of the kind of error found (price drift per lb, substituted item at spot price, unwarranted drop fee, missing credit).
-- 80-110 words, 3 short paragraphs, one clear question at the end.
+- The only offer is a free audit of the last 90 days of invoices from one distributor, with the dollar/pound amounts found. No pricing, fees, or ROI claims, and no promises about what the prospect will save.
+- Include the industry-average leakage stat once: about 1.8% of invoice totals are overcharges. Follow it with one worked example on an illustrative 12-location group spending ~$90,000/week (about $1,600/week, ~$84,000/year; use £ for UK prospects). State clearly it is an example, not a figure from the prospect's invoices.
+- Mention one or two concrete kinds of error (price drift per lb, substituted item at spot price, unwarranted drop fee, missing credit).
+- 100-130 words, 3 short paragraphs, one clear question at the end.
 - No exclamation marks, emoji, or buzzwords (AI-powered, streamline, leverage, unlock, game-changer, cutting-edge). Do not say "I hope this finds you well".
 - US prospects: US spelling, $, "credit memo", "locations". UK prospects: UK spelling, £, "credit note", "sites". Name only the distributor the prospect uses; if unknown, say "your main distributor".
 - Sign off as "Joseph".
