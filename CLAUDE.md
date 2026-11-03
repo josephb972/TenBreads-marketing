@@ -81,4 +81,5 @@ Same mechanics worldwide: US contracted line matrices (Sysco, US Foods, PFG) and
 - Use "Tenbreads" everywhere; monogram "TB".
 - Keep copy operator-facing and dollar-concrete (cents/lb, $/case, $/drop); avoid generic "AI" fluff.
 - Money handling: support $, £, €; never hard-code USD.
+- Outreach emails: written as Joseph in a natural, personal voice, offering only the free 90-day audit. Follow `outreach/EMAIL_STYLE.md` (US/UK variants).
 - Never commit secrets (Stripe keys, Firebase service accounts, `.env`).
