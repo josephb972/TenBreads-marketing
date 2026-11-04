@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tenbreads — Distributor Invoice Audit &amp; Recovery</title>
+<style>
+  :root{--ink:#1c1917;--mute:#57534e;--line:#e7e5e4;--bg:#fafaf9;--card:#fff;--accent:#b45309;--accent-ink:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .page{max-width:880px;margin:0 auto;padding:32px 20px}
+  header{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+  .mono{width:44px;height:44px;border-radius:10px;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:700;letter-spacing:.5px}
+  .brand{font-weight:700;font-size:20px}
+  .sub{color:var(--mute);font-size:13px}
+  h1{font-size:clamp(26px,5vw,38px);line-height:1.15;margin:0 0 12px}
+  h2{font-size:18px;margin:32px 0 12px}
+  p{margin:0 0 12px}
+  .lede{font-size:18px;color:var(--mute)}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .card h3{margin:0 0 6px;font-size:15px}
+  .card p{margin:0;font-size:14px;color:var(--mute)}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:10px}
+  .steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px 12px 52px;position:relative;font-size:15px}
+  .steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:13px;font-weight:700}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f5f5f4}
+  tr:last-child td{border-bottom:0}
+  .tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--accent);color:var(--accent);border-radius:99px;padding:1px 8px;margin-left:6px;vertical-align:middle}
+  .note{font-size:12px;color:var(--mute)}
+  .cta{background:var(--ink);color:#fff;border-radius:12px;padding:24px;margin-top:32px}
+  .cta p{margin:0 0 8px}
+  .cta a{color:#fff;font-weight:600}
+  footer{margin-top:24px;font-size:12px;color:var(--mute);border-top:1px solid var(--line);padding-top:12px}
+  @media print{body{background:#fff}.page{padding:0}.cta{background:#fff;color:#000;border:2px solid #000}.cta a{color:#000}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="mono" aria-hidden="true">TB</div>
+    <div><div class="brand">Tenbreads</div><div class="sub">Automated B2B Foodservice Invoice Auditor &amp; Recovery Engine</div></div>
+  </header>
+
+  <h1>Your distributor invoices are drifting off contract. We find it and get the money back.</h1>
+  <p class="lede">You pay 150 distributor invoices a week across 5–100 locations. We catch the $0.18/lb price drift, substituted SKUs, and bogus drop fees your AP team doesn't have 40 hours a week to find.</p>
+
+  <h2>What we catch</h2>
+  <div class="grid">
+    <div class="card"><h3>Contract price creep</h3><p>Chicken breast contracted at $3.80/lb drifts to $3.94, then $4.15.</p></div>
+    <div class="card"><h3>Unauthorized substitutions</h3><p>Out-of-stock item swapped and billed at $41.80/cs against $32.50 contracted.</p></div>
+    <div class="card"><h3>Ghost surcharges</h3><p>$45/drop fuel or drop fees despite "all-in delivered pricing"; split-case and pallet adders.</p></div>
+    <div class="card"><h3>Catch-weight errors</h3><p>Meat, seafood and cheese billed at gross container weight instead of net delivered weight.</p></div>
+    <div class="card"><h3>Missing credits</h3><p>The driver's handwritten credit memo that never reaches the monthly statement.</p></div>
+  </div>
+
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><strong>Upload your contract price schedule once.</strong> Invoices arrive by email forwarding, PDF upload, or EDI/folder sync.</li>
+    <li><strong>3-way line-by-line match.</strong> Item codes, pack sizes, UOM, delivered weights and billed rates against contract rates, substitution rules and approved adders.</li>
+    <li><strong>Dispute claim packet.</strong> Exact variance per line (e.g. billed $12.50/lb vs contract $10.84/lb = $74.70), plus a formal claim memo citing the contract clause and invoice number.</li>
+    <li><strong>Credit tracking.</strong> Drafted → Dispatched → Vendor Acknowledged → Credit Note Issued &amp; Reconciled.</li>
+  </ol>
+
+  <h2>Illustrative example <span class="tag">illustrative example</span></h2>
+  <table>
+    <tr><th>12-unit group, Sysco account</th><th>Figure</th></tr>
+    <tr><td>Annual food purchasing</td><td>about $4.68M</td></tr>
+    <tr><td>Leakage at 1.8% of invoice total</td><td>about $84,240 / year</td></tr>
+    <tr><td>SaaS retainer at $500/mo</td><td>$6,000 / year</td></tr>
+  </table>
+  <p class="note">Illustrative example only. Not a client result and not a guarantee. Your recoverable amount depends on your contract, distributor and invoices; the free lookback shows the real number.</p>
+
+  <h2>Pick how you pay</h2>
+  <table>
+    <tr><th>Option</th><th>Terms</th></tr>
+    <tr><td>Free 90-day lookback</td><td>We audit 90 days of invoices for one distributor account. You see recoverable dollars on your own invoices first.</td></tr>
+    <tr><td>Contingency</td><td>25% of credits the distributor actually books. $0 out of pocket.</td></tr>
+    <tr><td>SaaS retainer</td><td>$500/mo (5–15 units), $950/mo (16–40 units), custom quote for 40+.</td></tr>
+    <tr><td>Hybrid <span class="tag">recommended</span></td><td>About $299/mo plus 12–15% of recovered cash.</td></tr>
+  </table>
+  <p class="note">Pricing shown in USD; UK and EU pricing is quoted in £ / € on request. Audits cover US distributors (Sysco, US Foods, PFG, GFS, Cheney Brothers) and UK distributors (Brakes, Bidfood, Reynolds, Direct Seafoods, Booker).</p>
+
+  <div class="cta">
+    <p><strong>Want us to run the free 90-day lookback on your distributor account?</strong></p>
+    <p>Reply to <a href="mailto:tenbreads@elevatia.dev?subject=free%2090-day%20lookback">tenbreads@elevatia.dev</a> with the distributor name and your unit count.</p>
+  </div>
+
+  <footer>Tenbreads · 119B Kenton Road, Harrow, HA3 0AZ, United Kingdom · tenbreads@elevatia.dev</footer>
+</div>
+</body>
+</html>
