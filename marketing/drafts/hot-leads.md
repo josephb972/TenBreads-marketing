@@ -13,3 +13,4 @@ None.
 - Reminder: after sending the 3 emails, update their status to `sent` in `outreach-log.csv`. Touch 2 is due 2026-11-08.
 
 - 2026-11-05 run: inbox (14d) and sender-domain/sent searches again show no prospect replies, bounces or unsubscribes. Nothing logged as sent yet. No labels, drafts, suppression or log changes.
+- 2026-11-05 (evening) run: inbox (7d) and prospect-domain/sent searches show no prospect replies, bounces or unsubscribes. Only digests, newsletters, LinkedIn/GitHub/Stripe notices. Nothing logged as sent. No labels, drafts, suppression or log changes.
