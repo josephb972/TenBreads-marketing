@@ -1,6 +1,6 @@
 # Hot leads
 
-Last triage: 2026-11-06 15:15 UTC
+Last triage: 2026-11-06 ~18:40 UTC
 
 ## Hot
 None.
@@ -15,3 +15,4 @@ None.
 - 2026-11-05 run: inbox (14d) and sender-domain/sent searches again show no prospect replies, bounces or unsubscribes. Nothing logged as sent yet. No labels, drafts, suppression or log changes.
 - 2026-11-05 (evening) run: inbox (7d) and prospect-domain/sent searches show no prospect replies, bounces or unsubscribes. Only digests, newsletters, LinkedIn/GitHub/Stripe notices. Nothing logged as sent. No labels, drafts, suppression or log changes.
 - 2026-11-06 15:15 run: inbox (3d) and sent (7d) searches show no prospect replies, bounces or unsubscribes. Sent mail is only internal digests to tenbreads@elevatia.dev; no outreach sent yet. Nothing labelled; no drafts, suppression or log changes.
+- 2026-11-06 ~18:40 run: prospect-domain/bounce search (3d), inbox (2d) and sent (7d) show no prospect replies, bounces or unsubscribes. Sent mail is only internal digests; outreach still unsent. No labels, drafts, suppression or log changes.
