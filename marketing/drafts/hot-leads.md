@@ -1,6 +1,6 @@
 # Hot leads
 
-Last triage: 2026-11-09 ~15:20 UTC
+Last triage: 2026-11-10 ~19:20 UTC
 
 ## Hot
 None.
@@ -19,3 +19,4 @@ None.
 - 2026-11-09 15:20 run: prospect-domain/bounce/STOP search (4d), inbox (4d) and sent (7d) show no prospect replies, bounces or unsubscribes. Sent mail is only internal digests; 3 touch-1 drafts still unsent. No labels, drafts, suppression or log changes.
 - 2026-11-09 (later) run: prospect-domain/bounce/STOP search (3d), inbox (3d) and sent (7d) again show no prospect replies, bounces or unsubscribes. Sent mail is only internal digests; 3 touch-1 drafts still unsent. No labels, drafts, suppression or log changes.
 - 2026-11-10 15:20 run: prospect-domain/bounce/STOP search (3d), inbox (2d) and sent (7d) show no prospect replies, bounces or unsubscribes. Inbox is newsletters only; sent mail is only internal digests; 3 touch-1 drafts still unsent. No labels, drafts, suppression or log changes.
+- 2026-11-10 ~19:20 run: prospect-domain/bounce/STOP search (3d), inbox (1d) and sent (7d) show no prospect replies, bounces or unsubscribes. Inbox is newsletters/notices only; sent mail is only internal digests; 3 touch-1 drafts still unsent. No labels, drafts, suppression or log changes.
