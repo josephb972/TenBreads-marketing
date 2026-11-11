@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free 90-Day Invoice Lookback — Tenbreads</title>
+<meta name="description" content="We audit 90 days of one distributor account against your contract prices and show the recoverable dollars on your own invoices. Free.">
+<style>
+  :root{--ink:#1c1917;--mute:#57534e;--line:#e7e5e4;--bg:#fafaf9;--card:#fff;--accent:#b45309;--accent-ink:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .page{max-width:880px;margin:0 auto;padding:32px 20px}
+  header{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+  .mono{width:44px;height:44px;border-radius:10px;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:700;letter-spacing:.5px}
+  .brand{font-weight:700;font-size:20px}
+  .sub{color:var(--mute);font-size:13px}
+  h1{font-size:clamp(26px,5vw,38px);line-height:1.15;margin:0 0 12px}
+  h2{font-size:18px;margin:32px 0 12px}
+  p{margin:0 0 12px}
+  .lede{font-size:18px;color:var(--mute)}
+  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);border:0;border-radius:8px;padding:12px 20px;font:600 16px system-ui,sans-serif;cursor:pointer;text-decoration:none}
+  .btn:hover{filter:brightness(.92)}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .card h3{margin:0 0 6px;font-size:15px}
+  .card p{margin:0;font-size:14px;color:var(--mute)}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:10px}
+  .steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px 12px 52px;position:relative;font-size:15px}
+  .steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:13px;font-weight:700}
+  .tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--accent);color:var(--accent);border-radius:99px;padding:1px 8px;margin-left:6px;vertical-align:middle}
+  .note{font-size:12px;color:var(--mute)}
+  .ex{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .ex dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:6px 16px;font-size:14px}
+  .ex dt{color:var(--mute)} .ex dd{margin:0;font-weight:600;text-align:right}
+  form{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:14px}
+  label{display:grid;gap:4px;font-size:14px;font-weight:600}
+  input,select,textarea{font:16px system-ui,sans-serif;padding:10px;border:1px solid #a8a29e;border-radius:8px;background:#fff;color:var(--ink);width:100%}
+  input:focus,select:focus,textarea:focus,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:1px}
+  .row{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .hint{font-weight:400;color:var(--mute);font-size:12px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:8px}
+  summary{cursor:pointer;font-weight:600;font-size:15px}
+  details p{margin:8px 0 0;font-size:14px;color:var(--mute)}
+  footer{margin-top:32px;font-size:12px;color:var(--mute);border-top:1px solid var(--line);padding-top:12px}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="mono" aria-hidden="true">TB</div>
+    <div><div class="brand">Tenbreads</div><div class="sub">Automated B2B Foodservice Invoice Auditor &amp; Recovery Engine</div></div>
+  </header>
+
+  <h1>Find out what your distributor overbilled you in the last 90 days. Free.</h1>
+  <p class="lede">Send us 90 days of invoices from one distributor account. We check every line against your contract prices and show you the recoverable dollars on your own invoices. Then you decide.</p>
+  <p><a class="btn" href="#request">Request the free lookback</a></p>
+
+  <h2>What we look for</h2>
+  <div class="grid">
+    <div class="card"><h3>Price drift</h3><p>Chicken breast contracted at $3.80/lb, billed at $3.94, then $4.15.</p></div>
+    <div class="card"><h3>Substitutions</h3><p>Out-of-stock swap billed at $41.80/cs against $32.50 contracted.</p></div>
+    <div class="card"><h3>Ghost surcharges</h3><p>$45/drop fees and split-case adders despite "all-in delivered pricing".</p></div>
+    <div class="card"><h3>Catch-weight errors</h3><p>Gross container weight billed instead of net delivered weight.</p></div>
+    <div class="card"><h3>Missing credits</h3><p>The driver's handwritten credit memo that never reaches the statement.</p></div>
+  </div>
+
+  <h2>What you get</h2>
+  <ol class="steps">
+    <li><strong>A line-by-line audit report</strong> for one distributor account, covering 90 days of invoices.</li>
+    <li><strong>The exact variance per line.</strong> Example format: billed $12.50/lb vs contract $10.84/lb = $74.70.</li>
+    <li><strong>A recoverable-dollar total</strong> and draft dispute claim memos citing the contract clause and invoice number.</li>
+    <li><strong>No obligation.</strong> Afterwards choose contingency (25% of credits actually booked, $0 out of pocket), a SaaS retainer, or the hybrid (about $299/mo plus 12–15% of recovered cash).</li>
+  </ol>
+
+  <h2>What we need from you</h2>
+  <div class="grid">
+    <div class="card"><h3>Your contract</h3><p>The signed price agreement or master price schedule for that distributor.</p></div>
+    <div class="card"><h3>90 days of invoices</h3><p>PDFs or scans, by email forward or upload. EDI or folder sync also works.</p></div>
+    <div class="card"><h3>Who it's for</h3><p>Operators with 5–100+ locations (sweet spot 8–35) buying from Sysco, US Foods, PFG, GFS, Cheney Brothers, Brakes, Bidfood, Reynolds, Direct Seafoods or Booker.</p></div>
+  </div>
+
+  <h2>What a lookback can look like <span class="tag">illustrative example</span></h2>
+  <div class="ex">
+    <dl>
+      <dt>12-unit group, Sysco account: annual purchasing</dt><dd>about $4.68M</dd>
+      <dt>Leakage at 1.8% of invoice total</dt><dd>about $84,240 / year</dd>
+      <dt>Contingency on $10,000 found: you keep / Tenbreads earns</dt><dd>$7,500 / $2,500</dd>
+    </dl>
+  </div>
+  <p class="note">Illustrative example only. Not a client result and not a guarantee. Typical industry leakage is around 1.8% (illustrative); your number depends on your contract, distributor and invoices. That is what the lookback measures.</p>
+
+  <h2 id="request">Request your free lookback</h2>
+  <!-- FORM PLACEHOLDER: not connected to any backend. Submitting opens the visitor's own email client addressed to the sender below.
+       Owner: replace the handler with a real form endpoint before deployment (see marketing/config.md). No third-party scripts or trackers. -->
+  <form id="lookback" novalidate>
+    <div class="row">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Work email<input name="email" type="email" autocomplete="email" required></label>
+    </div>
+    <div class="row">
+      <label>Company<input name="company" autocomplete="organization" required></label>
+      <label>Number of locations<input name="units" type="number" min="1" inputmode="numeric" required></label>
+    </div>
+    <div class="row">
+      <label>Distributor to audit
+        <select name="distributor" required>
+          <option value="">Select one</option>
+          <optgroup label="US"><option>Sysco</option><option>US Foods</option><option>Performance Food Group</option><option>Gordon Food Service</option><option>Cheney Brothers</option></optgroup>
+          <optgroup label="UK"><option>Brakes</option><option>Bidfood</option><option>Reynolds</option><option>Direct Seafoods</option><option>Booker</option></optgroup>
+          <option>Other</option>
+        </select>
+      </label>
+      <label>Currency
+        <select name="currency"><option>$ USD</option><option>£ GBP</option><option>€ EUR</option></select>
+      </label>
+    </div>
+    <label>Anything we should know? <span class="hint">Optional. Do not include invoices or contracts here; we'll arrange a secure upload.</span>
+      <textarea name="notes" rows="3"></textarea>
+    </label>
+    <div><button class="btn" type="submit">Request the free lookback</button></div>
+    <p class="note" id="status" role="status" aria-live="polite">This opens a pre-filled email to tenbreads@elevatia.dev. Nothing is sent until you send it.</p>
+  </form>
+
+  <h2>Questions</h2>
+  <details><summary>Is it really free?</summary><p>Yes. The 90-day lookback on one distributor account costs nothing and has no obligation. You see recoverable dollars on your own invoices before choosing a pricing option.</p></details>
+  <details><summary>What if you find nothing?</summary><p>Then we tell you so. We don't promise a recovery; the lookback measures what is actually there.</p></details>
+  <details><summary>How does contingency work?</summary><p>25% of credits the distributor actually books. If nothing is credited, you owe nothing. Your card is authorized on file via Stripe when a claim packet is generated, and the fee is finalized only when the distributor issues the credit.</p></details>
+  <details><summary>Do you work in the UK and Europe?</summary><p>Yes. We audit US and UK distributors and support $, £ and €. Pricing shown here is in USD; UK and EU pricing is quoted in £ / € on request.</p></details>
+
+  <footer>Tenbreads · 119B Kenton Road, Harrow, HA3 0AZ, United Kingdom · <a href="mailto:tenbreads@elevatia.dev">tenbreads@elevatia.dev</a></footer>
+</div>
+<script>
+document.getElementById('lookback').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target,s=document.getElementById('status');
+  if(!f.checkValidity()){f.reportValidity();return;}
+  var d=new FormData(f);
+  var body=['Name: '+d.get('name'),'Email: '+d.get('email'),'Company: '+d.get('company'),'Locations: '+d.get('units'),'Distributor: '+d.get('distributor'),'Currency: '+d.get('currency'),'','Notes: '+(d.get('notes')||'')].join('\n');
+  window.location.href='mailto:tenbreads@elevatia.dev?subject='+encodeURIComponent('free 90-day lookback')+'&body='+encodeURIComponent(body);
+  s.textContent='If your email app did not open, write to tenbreads@elevatia.dev with the details above.';
+});
+</script>
+</body>
+</html>
