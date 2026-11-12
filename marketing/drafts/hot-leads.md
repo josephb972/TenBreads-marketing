@@ -1,6 +1,6 @@
 # Hot leads
 
-Last triage: 2026-11-11 ~19:00 UTC
+Last triage: 2026-11-12 ~15:15 UTC
 
 ## Hot
 None.
@@ -22,3 +22,4 @@ None.
 - 2026-11-10 ~19:20 run: prospect-domain/bounce/STOP search (3d), inbox (1d) and sent (7d) show no prospect replies, bounces or unsubscribes. Inbox is newsletters/notices only; sent mail is only internal digests; 3 touch-1 drafts still unsent. No labels, drafts, suppression or log changes.
 - 2026-11-11 15:15 run: prospect-domain (now incl. mowglistreetfood.com, innmail.co.uk)/bounce/STOP search (3d), inbox (2d) and sent (7d) show no prospect replies, bounces or unsubscribes. Inbox is newsletters/notices only; sent mail is only internal digests; all 5 touch-1 drafts still unsent. No labels, drafts, suppression or log changes.
 - 2026-11-11 ~19:00 run: prospect-domain/bounce/STOP search (3d), inbox (2d) and sent (7d) show no prospect replies, bounces or unsubscribes. Inbox is newsletters/launch-site/LinkedIn notices only; sent mail is only internal digests; all 5 touch-1 drafts still unsent. No labels, drafts, suppression or log changes.
+- 2026-11-12 15:15 run: prospect-domain (now incl. individualrestaurants.com, butcombe.com)/bounce/STOP search (3d), inbox (2d) and sent (7d) show no prospect replies, bounces or unsubscribes. Inbox is newsletters/launch-site/LinkedIn/DMARC notices only; sent mail is only internal digests; all 7 touch-1 drafts still unsent. No labels, drafts, suppression or log changes.
