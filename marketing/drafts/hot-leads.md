@@ -1,6 +1,6 @@
 # Hot leads
 
-Last triage: 2026-11-13 ~15:50 UTC
+Last triage: 2026-11-13 ~19:15 UTC
 
 ## Hot
 None.
@@ -25,3 +25,4 @@ None.
 - 2026-11-12 15:15 run: prospect-domain (now incl. individualrestaurants.com, butcombe.com)/bounce/STOP search (3d), inbox (2d) and sent (7d) show no prospect replies, bounces or unsubscribes. Inbox is newsletters/launch-site/LinkedIn/DMARC notices only; sent mail is only internal digests; all 7 touch-1 drafts still unsent. No labels, drafts, suppression or log changes.
 - 2026-11-12 (evening) run: prospect-domain/bounce/STOP search (3d) returned nothing; inbox (2d) is newsletters/GitHub/LinkedIn/DMARC notices only; sent (7d) is only internal digests. All 7 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
 - 2026-11-13 ~15:50 run: prospect-domain (all 8 domains incl. ushgnyc.com)/bounce/STOP search (3d) matched only newsletters; inbox (2d) is newsletters/LinkedIn/GitHub/DMARC/Google Cloud notices only; sent (7d) is only internal digests. All 7 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
+- 2026-11-13 ~19:15 run: prospect-domain (all 8 domains)/bounce search (3d) returned nothing; STOP/unsubscribe/wrong-person search (3d) matched only LinkedIn invites; inbox (1d) is newsletters/GitHub/PostHog/DMARC/Google Workspace notices only; sent (7d) is only internal digests. All 7 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
