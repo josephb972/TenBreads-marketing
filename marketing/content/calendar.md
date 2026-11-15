@@ -12,3 +12,7 @@ Pillars rotate through the five problems in icp.md. Each week: 3 LinkedIn posts 
 | 2026-11-09 | 3 Ghost surcharges (CFO, UK/£) | LinkedIn post | content/2026-11-09/linkedin-2-ghost-surcharges-uk.md | draft |
 | 2026-11-09 | 4 Catch-weight (AP Manager) | LinkedIn post | content/2026-11-09/linkedin-3-catch-weight.md | draft |
 | 2026-11-09 | 1 Price creep (Ops Director) | Blog post | content/2026-11-09/blog-price-creep.md | draft |
+| 2026-11-16 | 2 Substitution (Ops Director, UK/£) | LinkedIn post | content/2026-11-16/linkedin-1-substitution-uk.md | draft |
+| 2026-11-16 | 5 Missing credits (CFO) | LinkedIn post | content/2026-11-16/linkedin-2-missing-credits.md | draft |
+| 2026-11-16 | 1 Price creep (Exec Chef) | LinkedIn post | content/2026-11-16/linkedin-3-price-creep-chef.md | draft |
+| 2026-11-16 | 5 Missing credits (AP Manager, UK/£) | Blog post | content/2026-11-16/blog-missing-credits.md | draft |
