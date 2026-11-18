@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tenbreads — Invoice Leakage &amp; Fee Calculator</title>
+<style>
+  :root{--ink:#1c1917;--mute:#57534e;--line:#e7e5e4;--bg:#fafaf9;--card:#fff;--accent:#b45309;--accent-ink:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .page{max-width:880px;margin:0 auto;padding:32px 20px}
+  header{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+  .mono{width:44px;height:44px;border-radius:10px;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:700;letter-spacing:.5px}
+  .brand{font-weight:700;font-size:20px}
+  .sub{color:var(--mute);font-size:13px}
+  h1{font-size:clamp(26px,5vw,36px);line-height:1.15;margin:0 0 12px}
+  h2{font-size:18px;margin:28px 0 12px}
+  .lede{font-size:18px;color:var(--mute);margin:0 0 20px}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+  .inputs{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+  label{display:block;font-size:13px;font-weight:600;margin-bottom:4px}
+  input,select{width:100%;padding:10px;font:16px system-ui,sans-serif;border:1px solid #a8a29e;border-radius:8px;background:#fff;color:var(--ink)}
+  input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
+  .hint{font-size:12px;color:var(--mute);margin-top:3px}
+  .out{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:16px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .stat .k{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+  .stat .v{font-size:26px;font-weight:700;margin:4px 0}
+  .stat .d{font-size:13px;color:var(--mute)}
+  .stat.hl{border-color:var(--accent)}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);font-size:14px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+  th{background:#f5f5f4}
+  td.n,th.n{text-align:right}
+  .tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--accent);color:var(--accent);border-radius:99px;padding:1px 8px;vertical-align:middle}
+  .note{font-size:12px;color:var(--mute)}
+  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);border-radius:8px;padding:12px 20px;font-weight:600;text-decoration:none;margin-top:8px}
+  .warn{color:#b91c1c;font-size:13px;min-height:1.2em}
+  footer{margin-top:28px;font-size:12px;color:var(--mute);border-top:1px solid var(--line);padding-top:12px}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="mono" aria-hidden="true">TB</div>
+    <div><div class="brand">Tenbreads</div><div class="sub">Automated B2B Foodservice Invoice Auditor &amp; Recovery Engine</div></div>
+  </header>
+
+  <h1>What could off-contract invoices be costing you?</h1>
+  <p class="lede">Enter your footprint. Defaults are an <span class="tag">illustrative example</span> 12-unit group on a Sysco account, not a client result.</p>
+
+  <div class="panel">
+    <div class="inputs">
+      <div><label for="units">Locations</label><input id="units" type="number" min="1" step="1" value="12" inputmode="numeric"></div>
+      <div><label for="spend">Weekly spend per location</label><input id="spend" type="number" min="0" step="100" value="7500" inputmode="decimal"></div>
+      <div><label for="leak">Leakage % of invoice total</label><input id="leak" type="number" min="0" max="100" step="0.1" value="1.8" inputmode="decimal"><div class="hint">Illustrative: ~1.8% is a typical industry figure. Your 90-day lookback shows your real number.</div></div>
+      <div><label for="cur">Currency</label><select id="cur"><option value="$">$ USD</option><option value="£">£ GBP</option><option value="€">€ EUR</option></select></div>
+    </div>
+    <div class="warn" id="warn" role="alert"></div>
+  </div>
+
+  <div class="out" aria-live="polite">
+    <div class="stat hl"><div class="k">Annual purchasing</div><div class="v" id="purch">—</div><div class="d">units × weekly spend × 52</div></div>
+    <div class="stat hl"><div class="k">Annual leakage</div><div class="v" id="leakAmt">—</div><div class="d">purchasing × leakage %</div></div>
+    <div class="stat"><div class="k">Contingency fee (25%)</div><div class="v" id="cont">—</div><div class="d" id="contD">Only on credits actually booked. $0 out of pocket.</div></div>
+    <div class="stat"><div class="k">SaaS retainer</div><div class="v" id="saas">—</div><div class="d" id="saasD"></div></div>
+  </div>
+
+  <h2>Fee options side by side</h2>
+  <table>
+    <thead><tr><th>Option</th><th class="n">Annual fee</th><th class="n">You keep (if leakage is fully recovered)</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <p class="note">Recovery is never guaranteed: fees apply to credits the distributor actually issues. Contingency scenario assumes the full modeled leakage is booked. Hybrid is ~$299/mo base plus 12–15% of recovered cash. Reference figures are in USD; other currencies use the same numbers as the tier amounts, with no FX conversion.</p>
+
+  <p><a class="btn" href="audit-offer.html">Run the free 90-day lookback on your account →</a></p>
+
+  <footer>Tenbreads · 119B Kenton Road, Harrow, HA3 0AZ, United Kingdom · <a href="mailto:tenbreads@elevatia.dev">tenbreads@elevatia.dev</a><br>Estimates only. Calculations run in your browser; nothing is sent or stored.</footer>
+</div>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  function num(id){var v=parseFloat($(id).value);return isFinite(v)&&v>=0?v:NaN}
+  function fmt(n,c){return c+Math.round(n).toLocaleString('en-US')}
+  function calc(){
+    var u=num('units'),s=num('spend'),l=num('leak'),c=$('cur').value;
+    if(isNaN(u)||isNaN(s)||isNaN(l)||l>100){$('warn').textContent='Enter non-negative numbers (leakage 0–100).';return}
+    var w=[];if(u<5)w.push('Under 5 units: too little invoice volume for a master contract audit.');
+    $('warn').textContent=w.join(' ');
+    var purch=u*s*52, leak=purch*l/100, cont=leak*0.25;
+    var tier=u<=15?500:(u<=40?950:null);
+    var saasAnnual=tier===null?null:tier*12;
+    var hyBase=299*12, hyLo=hyBase+leak*0.12, hyHi=hyBase+leak*0.15;
+    $('purch').textContent=fmt(purch,c);
+    $('leakAmt').textContent=fmt(leak,c);
+    $('cont').textContent=fmt(cont,c);
+    $('saas').textContent=saasAnnual===null?'Custom quote':fmt(saasAnnual,c)+'/yr';
+    $('saasD').textContent=tier===null?'40+ units: priced by invoice volume.':fmt(tier,c)+'/mo flat, continuous auditing';
+    var r='';
+    r+='<tr><td>Contingency, 25%</td><td class="n">'+fmt(cont,c)+'</td><td class="n">'+fmt(leak-cont,c)+'</td></tr>';
+    r+='<tr><td>SaaS retainer</td><td class="n">'+(saasAnnual===null?'Custom':fmt(saasAnnual,c))+'</td><td class="n">'+(saasAnnual===null?'—':fmt(leak-saasAnnual,c))+'</td></tr>';
+    r+='<tr><td>Hybrid, $299/mo + 12–15%</td><td class="n">'+fmt(hyLo,c)+' – '+fmt(hyHi,c)+'</td><td class="n">'+fmt(leak-hyHi,c)+' – '+fmt(leak-hyLo,c)+'</td></tr>';
+    $('rows').innerHTML=r;
+  }
+  ['units','spend','leak','cur'].forEach(function(i){$(i).addEventListener('input',calc);$(i).addEventListener('change',calc)});
+  calc();
+})();
+</script>
+</body>
+</html>
