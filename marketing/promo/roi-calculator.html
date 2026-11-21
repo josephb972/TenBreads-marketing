@@ -3,18 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="assets/tenbreads-mark.png">
 <title>Tenbreads — Invoice Leakage &amp; Fee Calculator</title>
 <style>
-  :root{--navy:#0a1030;--navy2:#111a45;--orange:#f97316;--orange2:#ff8a00;--lav:#c7cbee;--ink:#0a1030;--mute:#4b5278;--line:#dfe2f2;--bg:#f4f5fb;--card:#fff}
+  :root{--navy:#070f31;--navy2:#0e1740;--orange:#f97316;--orange2:#ff8a00;--lav:#c9cdee;--ink:#0b1233;--mute:#4b5278;--line:#dfe2f2;--bg:#f4f5fb;--card:#fff}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-  .top{background:radial-gradient(120% 160% at 100% 0%,#3a2338 0,var(--navy) 45%),var(--navy);color:#fff;border-bottom:3px solid var(--orange)}
-  .top .in{max-width:880px;margin:0 auto;padding:22px 20px;display:flex;align-items:center;gap:14px}
-  .mono{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--orange2),#ff5a0a);color:#fff;display:grid;place-items:center;font-weight:800;font-size:20px;letter-spacing:.5px;transform:skewX(-6deg)}
-  .brand{font-weight:700;font-size:22px;letter-spacing:.2px}
-  .tl{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--lav)}
-  .tl i{color:var(--orange);font-style:normal;padding:0 .4em}
-  .sub{color:var(--lav);font-size:12px}
+  .hero{background:#070f2e;border-bottom:4px solid var(--orange)}
+  .hero .in{max-width:880px;margin:0 auto;padding:20px 20px 24px}
+  .hero img{display:block;width:100%;max-width:420px;height:auto}
   .page{max-width:880px;margin:0 auto;padding:28px 20px}
   h1{font-size:clamp(26px,5vw,36px);line-height:1.15;margin:0 0 12px;color:var(--navy)}
   h2{font-size:18px;margin:28px 0 12px;color:var(--navy)}
@@ -47,9 +44,7 @@
 </style>
 </head>
 <body>
-<div class="top"><div class="in">
-    <div class="mono" aria-hidden="true">TB</div>
-    <div><div class="brand">TenBreads</div><div class="tl">Find<i>•</i>Reclaim<i>•</i>Recover</div></div>
+<header class="hero"><div class="in"><img src="assets/tenbreads-logo.png" alt="TenBreads — Find · Reclaim · Recover"></div></header>
   </div></div>
 <div class="page">
 
