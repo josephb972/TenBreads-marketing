@@ -15,4 +15,4 @@ All run as cloud scheduled tasks on branch `ccr-05992a65-4on2a1`. Each prompt is
 Times avoid :00/:30 to dodge traffic. Adjust to your timezone once known.
 
 ## Pausing
-Disable any task via the scheduled-task list. Setting `Auto-send` or `Public posting` in config.md stays OFF until you decide otherwise.
+Disable any task via the scheduled-task list. `Auto-send` (outreach only) is ON; set it to OFF in config.md to stop sending. `Public posting` stays OFF until you decide otherwise.

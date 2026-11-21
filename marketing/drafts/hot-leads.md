@@ -1,6 +1,6 @@
 # Hot leads
 
-Last triage: 2026-11-18 ~15:20 UTC
+Last triage: 2026-11-20 (later run)
 
 ## Hot
 None.
@@ -31,3 +31,8 @@ None.
 - 2026-11-17 15:15 run: prospect-domain (all 14 domains incl. 6 new 2026-11-17 prospects)/bounce/STOP/unsubscribe search (3d) matched only newsletters/LinkedIn/Stripe/TikTok notices; inbox (2d) adds only DMARC/GitHub/RankInPublic notices; sent (7d) is only internal digests. All 13 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
 - 2026-11-17 ~19:15 run: prospect-domain (all 14 domains)/bounce/STOP/unsubscribe search (2d) matched only newsletters/LinkedIn/Stripe/TikTok/UptimeRobot notices; inbox (1d) adds only GitHub CI/RankInPublic/DMARC notices; sent (7d) is only internal digests. All 13 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
 - 2026-11-18 15:15 run: prospect-domain (all 14 domains)/bounce/STOP/unsubscribe search (2d) matched only newsletters/LinkedIn/PostHog/UptimeRobot/Stripe notices; inbox (1d) adds only the internal digest and a DMARC report; sent (7d) is only internal digests. All 13 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
+- 2026-11-18 ~18:00 run: prospect-domain (all 13 domains)/bounce/postmaster search (3d) returned nothing; sent (7d, excluding internal digests) returned nothing; inbox (2d) is newsletters/LinkedIn/GitHub/DMARC notices and the internal digest only. All 13 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
+- 2026-11-19 15:15 run: prospect-domain (all 13 domains)/bounce/STOP/unsubscribe search (3d) returned nothing; inbox (2d) is newsletters/LinkedIn/GitHub/DMARC notices only; sent (7d) is only internal digests. All 13 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
+- 2026-11-19 run: prospect-domain (all 13 touch-1 domains)/bounce/STOP/unsubscribe search (3d) matched only newsletters, TikTok/LinkedIn/Product Hunt notices; sent (7d) is only internal digests. All 13 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
+- 2026-11-20 15:15 run: prospect-domain (all 14 domains)/bounce search (4d) returned nothing; inbox (2d) is newsletters/LinkedIn/GitHub/DMARC notices only; sent (7d) is only internal digests. All 13 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
+- 2026-11-20 (later) run: prospect-domain (all 14 domains)/bounce/postmaster search (4d) returned nothing; inbox (14d) is newsletters/LinkedIn/GitHub/DMARC/TikTok notices only; sent (7d, excluding internal digests) returned nothing. All 13 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
