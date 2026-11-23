@@ -1,6 +1,6 @@
 # Hot leads
 
-Last triage: 2026-11-20 (later run)
+Last triage: 2026-11-23 15:15 run
 
 ## Hot
 None.
@@ -36,3 +36,4 @@ None.
 - 2026-11-19 run: prospect-domain (all 13 touch-1 domains)/bounce/STOP/unsubscribe search (3d) matched only newsletters, TikTok/LinkedIn/Product Hunt notices; sent (7d) is only internal digests. All 13 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
 - 2026-11-20 15:15 run: prospect-domain (all 14 domains)/bounce search (4d) returned nothing; inbox (2d) is newsletters/LinkedIn/GitHub/DMARC notices only; sent (7d) is only internal digests. All 13 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
 - 2026-11-20 (later) run: prospect-domain (all 14 domains)/bounce/postmaster search (4d) returned nothing; inbox (14d) is newsletters/LinkedIn/GitHub/DMARC/TikTok notices only; sent (7d, excluding internal digests) returned nothing. All 13 touch-1 drafts still unsent. No prospect replies, bounces or unsubscribes. No labels, drafts, suppression or log changes.
+- 2026-11-23 15:15 run: prospect-domain (14 domains)/bounce/postmaster search (7d) found one message: an automated "[Request received]" acknowledgement (ref 46312) from enquiries@individualrestaurants.com, 2026-11-21. It is a ticket auto-reply, not a human reply, so it was not labelled and Individual Restaurants stays `sent`. No bounces, unsubscribes or real replies. Sent (7d) shows all 13 touch-1 emails sent (2026-11-21). No labels, drafts, suppression or log changes. Touch 2 due 2026-11-25.
