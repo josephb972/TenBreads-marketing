@@ -1,6 +1,6 @@
 # Hot leads
 
-Last triage: 2026-11-23 (scheduled run, later)
+Last triage: 2026-11-24 (reply-triage run, 19:11 UTC)
 
 ## Hot
 None.
@@ -39,3 +39,4 @@ None.
 - 2026-11-23 15:15 run: prospect-domain (14 domains)/bounce/postmaster search (7d) found one message: an automated "[Request received]" acknowledgement (ref 46312) from enquiries@individualrestaurants.com, 2026-11-21. It is a ticket auto-reply, not a human reply, so it was not labelled and Individual Restaurants stays `sent`. No bounces, unsubscribes or real replies. Sent (7d) shows all 13 touch-1 emails sent (2026-11-21). No labels, drafts, suppression or log changes. Touch 2 due 2026-11-25.
 - 2026-11-23 (scheduled) run: 13 touch-1 rows now `sent` in outreach-log.csv. Searched all 13 prospect domains, bounce/STOP/unsubscribe (3d) and inbox (3d). Only prospect-related mail: an automated `[Request received]` acknowledgement (ref 46312, 2026-11-21) from enquiries@individualrestaurants.com. It is a web-form auto-reply, not a human reply: not labelled, no draft, touch 2/3 stay on schedule. No hot leads, questions, bounces or unsubscribes. suppression.csv unchanged. No `TB/` labels created.
 - 2026-11-24 15:15 run: inbox (14d) and prospect-domain (all 13 touch-1 domains)/bounce/STOP/unsubscribe search (5d) returned only the already-logged Individual Restaurants auto-acknowledgement (ref 46312, not a human reply). No prospect replies, bounces or unsubscribes. Rest of inbox is newsletters/DMARC/SaaS notices. No labels, drafts, suppression or log changes. Touch 2 for all 13 rows is due 2026-11-25 (no replies, none suppressed).
+- 2026-11-24 19:11 run (reply-triage): inbox (5d) searched for all 14 prospect domains plus bounce/undeliverable/unsubscribe/STOP/delivery-status subjects. Only match is the already-logged Individual Restaurants auto-acknowledgement (ref 46312, 2026-11-21), which is not a human reply. Account confirmed as tenbreads@elevatia.dev. No hot leads, questions, wrong-person, bounces or unsubscribes. No labels, drafts, suppression or log changes. Touch 2 due 2026-11-25.
