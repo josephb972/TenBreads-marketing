@@ -1,6 +1,6 @@
 # Hot leads
 
-Last triage: 2026-11-24 (reply-triage run, 19:11 UTC)
+Last triage: 2026-11-25 (reply-triage run)
 
 ## Hot
 None.
@@ -40,3 +40,4 @@ None.
 - 2026-11-23 (scheduled) run: 13 touch-1 rows now `sent` in outreach-log.csv. Searched all 13 prospect domains, bounce/STOP/unsubscribe (3d) and inbox (3d). Only prospect-related mail: an automated `[Request received]` acknowledgement (ref 46312, 2026-11-21) from enquiries@individualrestaurants.com. It is a web-form auto-reply, not a human reply: not labelled, no draft, touch 2/3 stay on schedule. No hot leads, questions, bounces or unsubscribes. suppression.csv unchanged. No `TB/` labels created.
 - 2026-11-24 15:15 run: inbox (14d) and prospect-domain (all 13 touch-1 domains)/bounce/STOP/unsubscribe search (5d) returned only the already-logged Individual Restaurants auto-acknowledgement (ref 46312, not a human reply). No prospect replies, bounces or unsubscribes. Rest of inbox is newsletters/DMARC/SaaS notices. No labels, drafts, suppression or log changes. Touch 2 for all 13 rows is due 2026-11-25 (no replies, none suppressed).
 - 2026-11-24 19:11 run (reply-triage): inbox (5d) searched for all 14 prospect domains plus bounce/undeliverable/unsubscribe/STOP/delivery-status subjects. Only match is the already-logged Individual Restaurants auto-acknowledgement (ref 46312, 2026-11-21), which is not a human reply. Account confirmed as tenbreads@elevatia.dev. No hot leads, questions, wrong-person, bounces or unsubscribes. No labels, drafts, suppression or log changes. Touch 2 due 2026-11-25.
+- 2026-11-25 (reply-triage run): Gmail account confirmed as tenbreads@elevatia.dev. Searched all 14 prospect domains plus to:tenbreads@elevatia.dev (7d), and bounce/undeliverable/unsubscribe/STOP/wrong-person subjects (7d). Only prospect-domain match is the already-logged Individual Restaurants auto-acknowledgement (ref 46312, 2026-11-21), not a human reply. Other mail is internal digests, a Mimecast DMARC report and newsletters. No hot leads, questions, wrong-person, bounces or unsubscribes. No `TB/` labels created or applied (nothing to label). No reply drafts. suppression.csv unchanged. outreach-log.csv unchanged (touch 2 drafts from 2026-11-25 remain as logged).
